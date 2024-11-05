@@ -1,0 +1,120 @@
+/* Estilos principais com tema escuro e tipografia aprimorada */
+body {
+    background-color: #1a3e2d;
+    color: #e0ffe0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://as1.ftcdn.net/v2/jpg/02/18/06/14/1000_F_218061499_Hb5rE9sMT8d1sYSGME4iIN87F9QhhuIp.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #264d37;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #a5d6a7;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #c8e6c9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 30px;
+    margin: 20px;
+    background-color: rgba(20, 40, 30, 0.8);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #81c784;
+    font-size: 1.8em;
+}
+
+button {
+    background-color: #4a8a56;
+    color: #e0ffe0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #5ca06b;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #264d37;
+}
+
+.cannabis-gifs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.cannabis-leaf {
+    width: 50px;
+    position: absolute;
+    animation: moveLeaves 20s infinite linear;  /* Aumentei a duração para 20 segundos */
+}
+
+.cannabis-leaf:nth-child(1) {
+    top: 10%;
+    left: 30%;
+    animation-duration: 25s;  /* Aumentei a duração para 25 segundos */
+}
+
+.cannabis-leaf:nth-child(2) {
+    top: 20%;
+    left: 60%;
+    animation-duration: 28s;  /* Aumentei a duração para 28 segundos */
+}
+
+.cannabis-leaf:nth-child(3) {
+    top: 50%;
+    left: 50%;
+    animation-duration: 30s;  /* Aumentei a duração para 30 segundos */
+}
+
+.cannabis-leaf:nth-child(4) {
+    top: 70%;
+    left: 80%;
+    animation-duration: 35s;  /* Aumentei a duração para 35 segundos */
+}
+
+@keyframes moveLeaves {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
